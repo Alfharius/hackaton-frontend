@@ -32,6 +32,16 @@ input, select {
     box-shadow: 0px 0px 20px #c53c1d;
     font-size: 20px;
 }
+select {
+    appearance: none;
+    background-image: url(/images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1em);
+    background-size: 0.85em auto;
+}
+option:checked {
+    background-color: #ff6543;
+}
 .mt-180 { margin-top: 180px;}
 .mt-40 { margin-top: 40px;}
 .mb-120 { margin-bottom: 120px;}
@@ -422,7 +432,9 @@ address {font-style: normal;}
 
     color: white;
  }
- 
+ .plan {
+    margin-left: 50px;
+ }
 @media (max-width: 1530px) {
     .w-1270 {
         width: 1270px;
