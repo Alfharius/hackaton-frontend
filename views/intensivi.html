@@ -17,7 +17,7 @@
             <nav>
                 <a href="index.html">Главная</a>
                 <a href="intensivi.html">Интенсивы</a>
-                <a href="">Планы</a>
+                <a href="plans.html">Планы</a>
             </nav>
             <div class="hamburger-menu ">
                 <input id="menu-toggle" type="checkbox" />
@@ -27,7 +27,7 @@
                 <ul class="menu-box">
                     <li><a class="menu-item" href="index.html">Главная</a></li>
                     <li><a class="menu-item" href="intensivi.html">Интенсивы</a></li>
-                    <li><a class="menu-item" href="">Планы</a></li>
+                    <li><a class="menu-item" href="plans.html">Планы</a></li>
                 </ul>
             </div>
 
@@ -41,11 +41,41 @@
         </div>
     </header>
     <section>
+        <div class="w-1270 in-center">
+            <h2 style="text-align: center;">Фильтр</h2>
+            <form action="">
+                <div>
+                    <label for="name">Название интенсива</label><br>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    <label>Название тематики</label><br>
+                    <input type="checkbox" name="1"><label>Бизнес-анализ</label><br>
+                    <input type="checkbox" name="2"><label>Программирование</label><br>
+                    <input type="checkbox" name="3"><label>Информационная безопасность</label><br>
+                    <input type="checkbox" name="4"><label>Тестирование</label><br>
+                    <input type="checkbox" name="5"><label>Web-design</label><br>
+                </div>
+                <div class="mt-40"> 
+                    <label for="lector" >Лектор</label><br>
+                    <select name="lector">
+                        <option value="1">Александров Виталя</option>
+                        <option value="2">Ефимов Александр</option>
+                        <option value="3">Казанцев Николай</option>
+                        <option value="4">Родионова Виктория</option>
+                    </select>
+                </div>
+                
+                <input type="submit" value="Найти">
+            </form>
+        </div>
+    </section>
+    <section>
         <div class="w-1270 in-center container">
             <h1>Интенсивы</h1>
             <div class="d-flex f-w-wrap jc-sa">
 
-                <a href="" class="intensiv-block">
+                <a href="info-intensiv.html" class="intensiv-block">
                     <img src="/images/img.png" alt="">
                     <p class="date">дата и время</p>
                     <h5>Заг1</h5>

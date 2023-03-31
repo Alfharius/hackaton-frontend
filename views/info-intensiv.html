@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link type="image/x-icon" href="/images/logo.png" rel="shortcut icon">
+    <title>Главная</title>
+</head>
+<body>
+    <header>
+        <div class="w-1270 in-center container d-flex jc-sb">
+            <div class="logo">
+                <a href="index.html"><img src="/images/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="intensivi.html">Интенсивы</a>
+                <a href="plans.html">Планы</a>
+            </nav>
+            <div class="hamburger-menu ">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                    <span></span>
+                </label>
+                <ul class="menu-box">
+                    <li><a class="menu-item" href="index.html">Главная</a></li>
+                    <li><a class="menu-item" href="intensivi.html">Интенсивы</a></li>
+                    <li><a class="menu-item" href="plans.html">Планы</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex jc-sb auth-lk">
+                <a href="auto.html"><input type="button" value="Вход"></a>
+                <a href="registr.html"><input type="button" value="Регистрация"></a>
+            </div>
+            <div class="d-flex jc-sb lk">
+                <a href="index.html"><input type="button" value="Личный кабинет"></a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="info-intensiv w-1270 in-center container">
+            <h1>Название интенсива</h1> 
+            <img src="/images/img.png" alt="">
+            <p class="date">дата и время</p>
+            <p>Категория</p>
+            <p>Лектор</p>
+            <p>План интенсива</p>
+            <p class="descript">Description</p>
+
+
+            <a href="#" class="js-open-modal" data-modal="1"><input type="button" value="Записаться на интенсив"></a>
+            <div class="modal mt-180" data-modal="1">
+                <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+                <form action="">
+                    <div class="d-flex"> 
+                        <label for="">Телефон</label>
+                        <input type="text">
+                    </div>
+                    <div class="d-flex"> 
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+                    <div class="d-flex"> 
+                        <label for="">Учебное заведение</label>
+                        <input type="text">
+                    </div>
+                    <div class="d-flex d-col"> 
+                        <label for="">Выберите направление Интенсива</label>
+                        <div class="d-flex jc-c"><input type="checkbox" name="1"><label>Бизнес-анализ</label></div>
+                        <div class="d-flex jc-c"><input type="checkbox" name="2"><label>Программирование</label></div>
+                        <div class="d-flex jc-c"><input type="checkbox" name="3"><label>Информационная безопасность</label></div>
+                        <div class="d-flex jc-c"><input type="checkbox" name="4"><label>Тестирование</label></div>
+                        <div class="d-flex jc-c"><input type="checkbox" name="5"><label>Web-design</label></div>
+                    </div>
+                    <div class="d-flex"> 
+                        <label for="">Расскажите о себе</label>
+                        <input type="text">
+                    </div>
+                    <input type="submit">
+                </form>
+                
+             </div>
+             <div class="overlay js-overlay-modal"></div> 
+             <script src="/js/modal-windows.js"></script>
+
+        </div>
+    </section>
+    <footer>
+        <div class="w-1270 in-center container">
+
+        </div>
+    </footer>
+</body>
+</html>
