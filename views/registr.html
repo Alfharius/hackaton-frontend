@@ -2,11 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/main.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link type="image/x-icon" href="/images/logo.png" rel="shortcut icon">
     <title>Регистрация</title>
-</head>
+    </head>
 <body>
     <header>
         <div class="w-1270 in-center container d-flex jc-sb">
@@ -15,6 +16,7 @@
             </div>
             <nav>
                 <a href="index.html">Главная</a>
+                <a href="intensivi.html">Интенсивы</a>
                 <a href="">Интенсивы</a>
                 <a href="">Планы</a>
             </nav>
@@ -25,13 +27,13 @@
                 </label>
                 <ul class="menu-box">
                     <li><a class="menu-item" href="index.html">Главная</a></li>
-                    <li><a class="menu-item" href="">Интенсивы</a></li>
+                    <li><a class="menu-item" href="intensivi.html">Интенсивы</a></li>
                     <li><a class="menu-item" href="">Планы</a></li>
                 </ul>
             </div>
 
             <div class="d-flex jc-sb auth-lk">
-                <a href="index.html"><input type="button" value="Вход"></a>
+                <a href="auto.html"><input type="button" value="Вход"></a>
                 <a href="registr.html"><input type="button" value="Регистрация"></a>
             </div>
             <div class="d-flex jc-sb lk">
@@ -48,37 +50,68 @@
     </header>
     <section>
         <div class="w-1270 in-center">
+            <h1>Регистрация</h1>
             <form action="">
                 <div>
-                    <label for="">Фамилия</label><br>
-                    <input type="text">
+                    <label for="surname">Фамилия</label><br>
+                    <input type="text" name="surname" required>
                 </div>
                 <div>
-                    <label for="">Имя</label><br>
-                    <input type="text">
+                    <label for="name">Имя</label><br>
+                    <input type="text" name="name" required>
                 </div>
                 <div>
-                    <label for="">Отчество</label><br>
-                    <input type="text">
+                    <label for="patronymic">Отчество</label><br>
+                    <input type="text" name="patronymic" required>
                 </div>
                 <div>
-                    <label for="">Ваш E-mail</label><br>
-                    <input type="email">
+                    <label for="email">Ваш E-mail</label><br>
+                    <input type="email" name="email" required>
                 </div>
                 <div>
-                    <label for="">Придумайте пароль</label><br>
-                    <input type="password">
+                    <label for="password"  class="password">Придумайте пароль</label><br>
+                    <div class="password">
+                        <input type="password" id="password-input" name="password" required>
+                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    </div>
                 </div>
                 <div>
-                    <label for="">Повторите пароль</label><br>
-                    <input type="password">
+                    <label for="password_confirm" class="password">Повторите пароль</label><br>
+                    <div class="password">
+                        <input type="password" id="password-input-2" name="password_confirm" required>
+                        <a href="#" class="password-control-2" onclick="return show_hide_password_2(this);"></a>    
+                    </div>
                 </div>
                 <div>
-                    <input type="checkbox"><label for="">Я соглашаюсь с обработкой данных</label>
+                    <input type="checkbox" required><label> Я соглашаюсь с обработкой данных</label>
                 </div>
                 <input type="submit" value="Зарегистрироваться">
             </form>
         </div>
     </section>
 </body>
+<script>
+    function show_hide_password(target){
+        var input = document.getElementById('password-input');
+        if (input.getAttribute('type') == 'password') {
+            target.classList.add('view');
+            input.setAttribute('type', 'text');
+        } else {
+            target.classList.remove('view');
+            input.setAttribute('type', 'password');
+        }
+        return false;
+    }
+    function show_hide_password_2(target){
+        var input = document.getElementById('password-input-2');
+        if (input.getAttribute('type') == 'password') {
+            target.classList.add('view');
+            input.setAttribute('type', 'text');
+        } else {
+            target.classList.remove('view');
+            input.setAttribute('type', 'password');
+        }
+        return false;
+    }
+</script>
 </html>

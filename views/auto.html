@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link type="image/x-icon" href="/images/logo.png" rel="shortcut icon">
+    <title>Регистрация</title>
+</head>
+<body>
+    <header>
+        <div class="w-1270 in-center container d-flex jc-sb">
+            <div class="logo">
+                <a href="index.html"><img src="/images/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="intensivi.html">Интенсивы</a>
+                <a href="">Планы</a>
+            </nav>
+            <div class="hamburger-menu ">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                    <span></span>
+                </label>
+                <ul class="menu-box">
+                    <li><a class="menu-item" href="index.html">Главная</a></li>
+                    <li><a class="menu-item" href="intensivi.html">Интенсивы</a></li>
+                    <li><a class="menu-item" href="">Планы</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex jc-sb auth-lk">
+                <a href="auto.html"><input type="button" value="Вход"></a>
+                <a href="registr.html"><input type="button" value="Регистрация"></a>
+            </div>
+            <div class="d-flex jc-sb lk">
+                <a href="index.html"><input type="button" value="Личный кабинет"></a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="w-1270 in-center">
+            <h1>Авторизация</h1>
+            <form action="">
+                <div>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password"  class="password">Пароль</label><br>
+                    <div class="password">
+                        <input type="password" id="password-input" name="password" required>
+                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    </div>
+                </div>
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </section>
+</body>
+<script>
+    function show_hide_password(target){
+        var input = document.getElementById('password-input');
+        if (input.getAttribute('type') == 'password') {
+            target.classList.add('view');
+            input.setAttribute('type', 'text');
+        } else {
+            target.classList.remove('view');
+            input.setAttribute('type', 'password');
+        }
+        return false;
+    }
+</script>
+</html>
