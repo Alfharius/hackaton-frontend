@@ -100,9 +100,12 @@ footer a{
     display: flex;
     align-items: center;
 }
-.w-80 { width: 1000px;}
-.w-20 { width: 500px;}
+.w-80 { width: 60%;}
+.w-20 { width: 20%; margin-right: 300px;}
 .w-50 { width: 500px;}
+.krosh {
+    margin-right: 25%;
+}
 .f-w-wrap {
     flex-wrap: wrap;
 }
@@ -154,10 +157,7 @@ footer a{
 }
 .mb-60 {margin-bottom: 60px;}
 address {font-style: normal;}
-.krosh {
-    margin-right: 300px;
-    z-index: 0;
-}
+
 
 .hamburger-menu {
     display: none;
@@ -312,25 +312,35 @@ address {font-style: normal;}
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1530px) {
     .w-1270 {
         width: 1270px;
     }
-    
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .w-80 { width: 40%;}
+    .w-20 {  width: 30%; }
 }
 @media (max-width: 1199px) { 
     .w-1270 {
         width: 1000px;
     }
     h2 {
-        font-size: 45px;
+        font-size: 35px;
     }
     h3 {
-        font-size: 35px;
+        font-size: 25px;
     }
     p {
         font-size: 20px;
     }
+    .w-80 { width: 40%;}
+    .w-20 {  width: 30%; }
+    
 }
 @media (max-width: 991px) {
     .w-1270 {
@@ -350,6 +360,11 @@ address {font-style: normal;}
         margin-left: -30px;
     }
     h1 { font-size: 45px;}
+    .w-80 { width: 100%;}
+    .w-20 { width: 100%; }
+    .krosh {
+        margin-left: 25%;
+    }
 }
 @media (max-width: 768px) {
     .w-1270 {
@@ -374,4 +389,6 @@ address {font-style: normal;}
     input {
         padding: 10px 20px;
     }
+    .w-80 { width: 80%;}
+    .w-20 { width: 80%; }
 }
