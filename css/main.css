@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url(/images/фон.png);
+    background-position: center;
+    background-color: #161617;    
+    font-family: "Montserrat", sans-serif;
+}
+p { font-weight: 300;}
+.w-1270 {
+    max-width: 1270px;
+    max-width: 80vw;
+}
+.in-center {
+    margin: 0 auto;
+}
+.container {
+    padding: 0 10%;
+}
+input {
+    border: solid #ff6543 2px;
+    border-radius: 40px;
+    padding: 10px 40px;
+    background: #2d1414;
+    box-shadow: 0px 0px 20px #c53c1d;
+    font-size: 20px;
+}
+.mt-180 { margin-top: 180px;}
+.mt-40 { margin-top: 40px;}
+h2 {
+    font-size: 65px;
+}
+h3 {
+    font-size: 45px;
+}
+h1, h2, h3 {
+    background-image: linear-gradient(45deg, #FF8762, #CA2A5A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+input:hover {
+    background: #ff6543;
+    transition: 0.5s ease-in-out;
+}
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form input {
+    margin-top: 6px;
+    margin-bottom: 30px;
+}
+form input:hover {
+    background: #2d1414;
+    
+}
+a { 
+    padding: 10px;
+    text-decoration: none;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.auth-lk {display: flex;}
+.lk {display: none;}
+
+
+
+
+
+
+
+
+.hamburger-menu {
+    display: none;
+  }
+  #menu-toggle {
+    opacity: 0;
+    display: block;
+    z-index: 1;
+  }
+  .menu-toggle, .menu-btn {
+    display: flex;
+  }
+  #menu-toggle:checked ~ .menu-btn > span {
+    transform: rotate(45deg);
+  }
+  #menu-toggle:checked ~ .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu-toggle:checked ~ .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu-toggle:checked ~ .menu-box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 35px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 500;
+  }
+  .menu-btn > span,
+  .menu-btn > span::before,
+  .menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(45deg, #FF8762, #CA2A5A);
+    transition-duration: .25s;
+    box-shadow: 0px 0px 20px #c53c1d;
+  }
+  span {
+    max-width: 100%;
+  }
+  span::before, span::after {
+    max-width: 70%;
+  }
+  span::after {
+    max-width: 100%;
+  }  
+  .menu-btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu-btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu-box {
+    user-select: none;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    z-index: 10;
+    width: 300px;
+    height: 30%;
+    margin: 0;
+    left: 0;
+    padding: 80px 0;
+    list-style: none;
+    background: rgba(72, 42, 42, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(118, 22, 22, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition-duration: .25s;
+  }
+  
+  .menu-item {
+    display: block;
+    padding: 12px 24px;
+    background-image: linear-gradient(45deg, #FF8762, #CA2A5A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    text-decoration: none;
+    
+  }
+  .menu-item:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffd5c8;
+    background: linear-gradient(45deg, #FF8762, #CA2A5A);
+  }
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .w-1270 {
+        width: 1270px;
+    }
+    
+}
+@media (max-width: 1199px) { 
+    .w-1270 {
+        width: 1000px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 991px) {
+    .w-1270 {
+        width: 780px;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .logo img { width: 100px; height: auto;}
+}
+@media (max-width: 768px) {
+    .w-1270 {
+        width: 100%;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    input {
+        font-size: 16px;
+    }
+    nav {
+        display: none;
+    }
+    .logo { margin-left: -40px;}
+    input {
+        padding: 10px 20px;
+    }
+}
