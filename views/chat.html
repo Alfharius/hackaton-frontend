@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
     <link type="image/x-icon" href="/images/logo.png" rel="shortcut icon">
-    <title>Регистрация</title>
+    <title>Чат</title>
 </head>
 <body>
     <header>
@@ -42,21 +42,29 @@
     </header>
     <section>
         <div class="w-1270 in-center">
-            <h1>Авторизация</h1>
-            <form action="">
+            <div style="text-align: center;padding: 50px 0; background: gray;">
+                <p>Лектор</p>
+            </div>
+            <div class="d-flex jc-sb" style="background: white; padding: 50px;" >
                 <div>
-                    <label for="email">E-mail</label><br>
-                    <input type="email" name="email" required>
-                </div>
+                    <div style="text-align: left;  color: black; padding: 20px; width: 30%;">gfgfgfgfg</div>
+                    <div style="  padding: 50px; width: 30%;"></div>
+                <div style="text-align: left; color: black; padding: 20px; width: 30%;">rtrtrtrrtrt</div>
+                <div style="  padding: 50px; width: 30%;"></div>
+            </div>
                 <div>
-                    <label for="password"  class="password">Пароль</label><br>
-                    <div class="password">
-                        <input type="password" id="password-input" name="password" required>
-                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
-                    </div>
-                </div>
-                <input type="submit" value="Войти">
-            </form>
+                    <div style="  padding: 50px; width: 30%;"></div>
+                    <div style=" text-align: right; color: black; padding: 20px; width: 30%;">nnbnbnbnb</div>
+                    <div style="  padding: 50px; width: 30%;"></div>
+                <div style="text-align: right; color: black; padding: 20px; width: 30%;">dsdsdsddsdsd</div>
+            </div>
+                
+                
+            </div>
+            <div class="d-flex jc-sb" style="padding: 50px; background: gray;">
+                <input type="text" class="chat-text-input" placeholder="Напишите сообщение">
+                <input type="button" class="chat-button-input" value="Отправить">
+            </div>
         </div>
     </section>
     <div class="hr"></div>  
@@ -81,18 +89,4 @@
             </div>
         </div>
     </footer>
-</body>
-<script>
-    function show_hide_password(target){
-        var input = document.getElementById('password-input');
-        if (input.getAttribute('type') == 'password') {
-            target.classList.add('view');
-            input.setAttribute('type', 'text');
-        } else {
-            target.classList.remove('view');
-            input.setAttribute('type', 'password');
-        }
-        return false;
-    }
-</script>
-</html>
+       

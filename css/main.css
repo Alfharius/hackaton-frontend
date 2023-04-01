@@ -239,7 +239,13 @@ address {font-style: normal;}
     content: '';
     top: 8px;
   }
-  
+  .list-napr h3 { 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+  }
+  .list-napr h3::before {
+    content: "►";
+  }
   .menu-box {
     user-select: none;
     display: block;
@@ -434,6 +440,12 @@ address {font-style: normal;}
  }
  .plan {
     margin-left: 50px;
+ }
+ .chat-text-input {
+    width: 70%;
+ }
+ .chat-button-input {
+    width: 20%;
  }
 @media (max-width: 1530px) {
     .w-1270 {
